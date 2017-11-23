@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './App.css';
+import './main.css';
 
-class App extends Component {
+class Main extends Component {
   constructor() {
     super();
 
@@ -35,4 +35,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Main;
