@@ -1,38 +1,33 @@
 import React, { Component } from 'react'
-import axios from 'axios';
+// import axios from 'axios';
 
-// import User from '../User'
+import User from '../User'
 import './user-list.css'
 
 class UserList extends Component {
   constructor() {
     super();
-
-    this.state = {
-      results: []
-    };
-
-    axios.get("https://randomuser.me/api/?results=50")
-    .then(response => {
-      this.setState({
-        results: response.data.results
-      })
-    })
-    .catch(error => {
-      console.log(error);
-    })
+    
   }
 
   render () {
     return (
-      <div>
-        <ul>
-          {this.state.results.map(result =>
-            <li key={result.email}>{result.email} {result.login.username}</li>
-          )}
-        </ul>
+      <div className="user-list-root">
+        {this.props.users.map(usr => {
+          return (
+            <User 
+              key={usr.dob}
+              picture={usr.picture.large}
+              name={usr.name.first}
+              username={usr.login.username}
+              adress={usr.location.street}
+              email={usr.email}
+              phone={usr.phone}
+            />
+          )
+        })}
       </div>
-    );
+    )
   }
 }
 
