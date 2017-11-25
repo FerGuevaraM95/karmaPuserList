@@ -11,20 +11,18 @@ class User extends Component {
 	render () {
 
 		return (
-			<div className="user-root">
-				<div className="user-user">
-					<figure>
-						<img className="user-avatar" src={this.props.picture} />
-					</figure>
-					<span className="user-displayName">{this.props.name}</span>
-					<span className="user-username">{this.props.username}</span>
-					<span className="user-username">{this.props.adress}</span>
-					<span className="user-username">{this.props.email}</span>
-					<span className="user-username">{this.props.phone}</span>
-				</div>	
-			</div>		
+
+				<div className="card text-white">
+				  <img className="card-img-top user-img" src={this.props.picture} />
+				  <div className="card-img-overlay">
+				    <h6 className="card-text user-name">{this.props.name}</h6>
+				    <small className="user-small">{this.props.username}</small>
+				  </div>
+				</div>
+			
 		)
 	}
 }
 
 export default User
+
