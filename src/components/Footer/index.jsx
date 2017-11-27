@@ -4,9 +4,11 @@ import './footer.css'
 class Footer extends Component {
 	render () {
 		return (
-			<footer className="row justify-content-center">
-				<p className="footer-copyright">KarmaPuser! List © 2017</p>
-			</footer>
+			<div className="container">
+				<footer className="col row justify-content-center">
+					<p className="footer-copyright">KarmaPuser! List © 2017</p>
+				</footer>
+			</div>
 			)
 	}
 }

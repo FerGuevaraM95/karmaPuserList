@@ -1,17 +1,26 @@
+a {
+	color: #fff;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration:none; 
+}
+
 .header-root {
 	display: flex;
 	background-color: #009688;
 	border-radius: 3px;
 	align-items: center;
 	justify-content: space-between;
-	color: #fff;
+	color: #fff !important;
 	padding: 1em;
 	margin-bottom: .75em;
 }
 
 .header-logo {
 	margin: 0;
-	color: #fff;
 	font-family: 'Oleo Script', cursive;
 	font-size: 14pt;
 }
+
