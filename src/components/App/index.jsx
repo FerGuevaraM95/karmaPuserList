@@ -6,17 +6,13 @@ import Main from '../Main'
 import Footer from '../Footer'
 
 class App extends Component {
-	constructor () {
-		super()
-
-		}
 
 	render () {
 		return (
 			<div>
 				<Header />
 				<Main />
-				<Footer />	
+				<Footer />
 			</div>		
 			)
 	}

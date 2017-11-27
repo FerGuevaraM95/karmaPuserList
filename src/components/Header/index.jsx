@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
 import './header.css'
 
 class Header extends Component {
@@ -7,7 +9,7 @@ class Header extends Component {
 			<div className="Container">
 				<div className="row justify-content-center">
 				<header className="col-11 header-root">
-					<h1 className="header-logo">KarmaPuser List!</h1>
+					<h1 className="header-logo"><Link to='/'>KarmaPuser List!</Link></h1>
 				</header>
 				</div>
 			</div>

@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
 import './user.css'
 
 class User extends Component {
+
 	constructor (props) {
 		super(props)
 
@@ -13,10 +16,14 @@ class User extends Component {
 		return (
 
 				<div className="card text-white">
-				  <img className="card-img-top user-img" src={this.props.picture} />
+				  <a href={`/${this.props.name}`}><img className="card-img-top user-img" src={this.props.picture} /></a> 
 				  <div className="card-img-overlay">
 				    <h6 className="card-text user-name">{this.props.name}</h6>
 				    <small className="user-small">{this.props.username}</small>
+				    <small className="user-small">{this.props.adress}</small>
+				    <small className="user-small">{this.props.email}</small>
+				    <small className="user-small">{this.props.phone}</small>
+				    <Link to='/this.props.name'>more...</Link>
 				  </div>
 				</div>
 			
@@ -25,4 +32,3 @@ class User extends Component {
 }
 
 export default User
-
