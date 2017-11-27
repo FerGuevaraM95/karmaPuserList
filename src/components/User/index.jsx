@@ -23,7 +23,7 @@ class User extends Component {
 				    <small className="user-small">{this.props.adress}</small>
 				    <small className="user-small">{this.props.email}</small>
 				    <small className="user-small">{this.props.phone}</small>
-				    <Link to='/this.props.name'>more...</Link>
+				    <Link to='/:key'>more...</Link>
 				  </div>
 				</div>
 			
